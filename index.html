@@ -9,24 +9,36 @@
         </head>
         
         <body>
-            <h1 id="big">The Loch Ness Monster
-            </h1>
-            <ol>
+            <canvas id = "myCanvas" width=600 height=600>
+
+            </canvas>
+            <script>
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            var x = 95
+            var y = 50
+            var ax = 0.5
+            var ay = 0.5
+
+            function draw(){
+                context.clearRect(0,0,canvas.width,canvas.height)
+                x = x+5
+                y = y+5
+                if(x<0|| x> canvas.width){
+                    vx=-vx
+                }
+                if(y<0|| y> canvas.height){
+                    vy=-vy
+                }
+                
+                context.beginpath();
+                context.arc(x,y, 40, 0,2+Math.PI);
+                context.stroke();
+                requestAnimationFrame(draw)}
+
             
-            <li>
-            <a href ="a1-1.html">What is it?</a>
-               </li>
-                <li>
-            <a href ="a1-2.html">pictures!</a>
-               </li>
-                </ol>
-            
-            <div class="home">
-                <div id = "small">
-                SWIM AWAY!!</div>
-            don't let him catch you</div>
-            <div class = "last">
-            Spread the word!</div>
+
+            </script>
         
        
             
