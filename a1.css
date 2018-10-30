@@ -1,0 +1,50 @@
+body {
+    background-color: #499247;
+    font-size: 28pt;
+      border-bottom: thick solid aqua
+          
+  }
+  
+  h1:hover {
+    border: thick solid Pink;
+      
+      font-style: italic;
+  
+  }
+  li:active{
+      direction: rtl;
+          color: blue;
+  }
+  li{
+          color: green;
+  }
+  #big{
+      color:aqua;
+  }
+  a{
+      color:deeppink;
+          font:oblique;
+  }
+  .home{
+      height:auto;
+      background-color: #00aaff;
+                height: 150px;
+              width:auto
+  }
+  .home:first-child{
+      Border: thin dotted aqua;
+      
+  }
+  #small{
+      font-style: italic;
+      width:auto;
+          color:orange;
+      
+  }
+  
+  .last{
+      font-size:20pt;
+      background-color: azure;
+      border-bottom-style: dashed;
+      border-bottom-color: aqua
+  }
