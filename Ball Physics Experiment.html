@@ -18,7 +18,7 @@
             var x = 95
             var y = 50
             var ax = 0.5
-            var ay = 0.5
+            var ay = 5.5
             var vx=5
             var vy=5
 
@@ -30,6 +30,7 @@
                 y = y+vy
                 if(x<0|| x> canvas.width){
                     vx=-vx
+                    ax=-ax
                 }
                 if(y<0|| y> canvas.height){
                     vy=-vy
