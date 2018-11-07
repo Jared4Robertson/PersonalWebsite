@@ -24,6 +24,8 @@
 
             function draw(){
                 context.clearRect(0,0,canvas.width,canvas.height)
+                vx=ax+vx
+                vy=ax+vy
                 x = x+vx
                 y = y+vy
                 if(x<0|| x> canvas.width){
