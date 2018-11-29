@@ -4,12 +4,12 @@
             <title>COMP 426 Assignment 1
                 
             </title>
-            <!--<link rel="stylesheet" href="a1.css">-->
+            <link rel="stylesheet" href="ball.css">
             <meta charset="utf-8">
         </head>
         
         <body>
-            <canvas id = "myCanvas" width=600 height=600>
+            <canvas id = "myCanvas" width=1000 height=600>
 
             </canvas>
             <script>
@@ -21,25 +21,43 @@
             var ay = 2;
             var vx=5
             var vy=5
+            var x3=x
+            var y3=y
 
             function draw(){
                 context.clearRect(0,0,canvas.width,canvas.height)
                 vx=ax+vx
                 vy=ay+vy
+                x2=x3
+                y2=y3
+                x3=x
+                y3=y
                 x = x+vx
                 y = y+vy
                 
-                if(x<0|| x> canvas.width){
+                
+                if(x<0+30|| x> canvas.width-30){
                     vx=-vx
+                    
                     
                 
                 }
                 if(y<0|| y> canvas.height){
                     vy=-vy
+                    if(vx>0){
+                        vx-=.012;
+                    }
+                    else{
+                        vx+=.012;
+                    }
                 }
                 
                 context.beginPath();
                 context.arc(Math.max(x,0),Math.min(y,canvas.height-40), 40, 0,2*Math.PI);
+                context.arc(Math.max(x2,0),Math.min(y2,canvas.height-40), 40, 0,2*Math.PI);
+                context.arc(Math.max(x3,0),Math.min(y3,canvas.height-40), 40, 0,2*Math.PI);
+                
+
                 context.stroke();
                 requestAnimationFrame(draw)
                 }
