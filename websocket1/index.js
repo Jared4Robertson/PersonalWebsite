@@ -4,5 +4,5 @@ const binanceWS = new api.BinanceWS(true); // Argument specifies whether the res
 
 binanceWS.onDepthUpdate('BNBBTC', (data) => {
     console.log(data);
+
 });
- 
