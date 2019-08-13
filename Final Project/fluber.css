@@ -1,0 +1,407 @@
+#login_div{
+    height: 100vh;
+    width: 50vw;
+    
+}
+#navbar_div {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    overflow: hidden;
+    width: 100%;
+}
+/* Style the links inside the navigation bar */
+#navbar_div a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+/* Change the color of links on hover */
+#navbar_div a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#Passenger_login_div{
+    height: 70vh;
+    width: 35vw;
+    float: left;
+    text-align: left;
+    font-size: 72px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10vw;   
+}
+#Pilot_login_div{
+    height: 80vh;
+    width: 40vw;
+    float: right;
+    margin-right: 40px;
+    text-align: center;
+    background-image: url(http://www.travelstart.co.za/blog/wp-content/uploads/2018/05/sunset-aircraft.jpg);
+    background-position-x: -130px;
+}
+#big{
+    text-align: center;
+}
+.center{
+    margin: auto;
+}
+.blue_button{
+   
+    color:blue;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color:white;
+    border-color: blue;
+    border-style: solid;
+
+}
+.blue_button:hover{
+    background-color: #ddd;
+    color: black;
+}
+.Advertisement{
+height: 60vh;
+width: 100%;;
+
+font-weight: bold;
+}
+.button_holder1{
+    text-align: center;
+    float: left;
+    width: 49%;
+    font-size: 20px;
+}
+.button_holder2{
+    text-align: center;
+    float: right;
+    width: 49%;
+    font-size: 20px;
+}
+body{
+    width: 100%;
+    margin: 0;
+    height: 89vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar_div a.login_button{
+    float: right;
+    margin-right: 30px;
+}
+.login_div{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.textbox{
+    width: 390px;
+    height: 60px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+#login_btn{
+    margin-top: 10px;
+    width: 390px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    border-width: 0ch;
+}
+#navbar_div a.user{
+    float: right;
+    margin-right: 30px;
+}
+#mesg_div{
+    font-size: 20px;
+}
+.base_div_pilot{
+    width: 70%;
+    height: 68vh;
+    margin:auto;
+    background-color: black;
+    border-top-width: 30px;
+    border-radius: 10px;
+    opacity: .8;
+    text-align: left;
+    Color: white;
+    
+}
+.base_div_pilot2{
+    width: 60%;
+    height: 30vh;
+    margin-left: 75px;
+    background-color: white;
+    border-top-width: 30px;
+    border-radius: 10px;
+    opacity: .9;
+    text-align: left;
+    Color: black;
+    float: left;
+}
+.base_div_passenger{
+    width: 70%;
+    height: 50vh;
+    margin:auto;
+    margin-top:50px;
+    background-color: black;
+    border-top-width: 30px;
+    border-radius: 10px;
+    opacity: .8;
+    text-align: left;
+    Color: white;
+    
+}
+.background_div{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2017/02/airplane-flight-sunset.jpg?itok=8iUtkHU-);
+    background-size: 100% 100%;
+
+
+}
+#Search_btn{
+    margin-top: 10px;
+    width: 10vw;
+    height: 30px;
+    color:black;
+    background-color: blue;
+    border-width: 0ch;
+    font-size: 20;
+    border-radius: 10px;
+    margin-left: 3vw;
+}
+#Search_btn:hover{
+    background-color: #ddd;
+}
+.searchbox{
+    width: 20vw;
+    height: 7vh;
+    margin-right: 5vw;
+    margin-left: 3vw;
+    padding-left: 2vw;
+}
+.title{
+    margin: auto;
+    color: white;
+    padding-top:50px;
+    padding-left: 50px;
+    font-size: 50px;
+}
+.title2{
+    margin: auto;
+    color: blue;
+    padding-top:50px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.background_div2{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.telegraph.co.uk/content/dam/Travel/2017/November/early%20flight%20GettyImages-696880572.jpg?imwidth=1400);
+    background-size: 100% 100%;
+}
+.background_div3{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.smartertravel.com/uploads/2013/09/air-two_planes_one_parked_another_taking_off-1000x500.jpg);
+    background-size: 100% 100%;
+}
+.depart_text{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+.depart_text2{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: black;
+}
+  .autocomplete-items div {
+    color: black;  
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  .autocomplete-items{
+    text-align: center;
+    width: 26vw;
+    height: auto;
+    position: absolute;
+   /* top: 39.5vh;
+    left: 16.2vw;*/
+    
+  }
+  
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9; 
+
+  }
+  #toautocomplete-list{
+      margin-left:31vw ;
+      overflow: hidden;
+      max-height: 52vh;
+
+  }
+  
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+  
+  .flight_div{
+    color:white;  
+    width:80vw;
+    height: 20vh;
+    margin: auto;
+    background-color:black;
+    opacity: .8;
+    border-radius: 3px;
+    margin-top: 5vh;
+    overflow: auto;
+  }
+  .flight_div:hover{
+        color:white;  
+        width:81vw;
+        height: 21vh;
+        margin: auto;
+        background-color:black;
+        opacity: 1;
+        border-radius: 3px;
+        margin-top: 4vh;
+        overflow: auto;
+  }
+  #flight_div_holder{
+       
+      height: 70%;
+      overflow: Auto;
+      width:88vw;
+      border-style: solid;
+      border-color: white;
+      margin:auto;
+      border-width: 0px;
+      border-radius:3px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top-width: 0;
+      scrollbar-track-color: black;
+      text-align: center;
+  }
+  #flight_Title{
+      text-align: center;
+
+      padding-top:3vh;
+      font-size: 70px;
+      margin: auto;
+      width:78vw;
+      height:10vh;
+      color: black;
+      opacity: .9;
+      border-radius:3px;
+      font-weight: bold;
+
+  }
+  ::-webkit-scrollbar {
+    color: rgba(0, 0, 0, 0.815);
+  }
+  .flight_number_div{
+    padding-top:8vh;
+      width:20vw;
+      height: 10vh;
+      font-size: 25px;
+      margin:0;
+      float: left;
+  }
+  .flight_date_div{
+    padding-top:8vh;
+    width:20vw;
+    height: 10vh;
+    font-size: 25px;
+    margin:0;
+    float: left;
+}
+.flight_time_div{
+    padding-top:8vh;
+    width:20vw;
+    height: 10vh;
+    font-size: 25px;
+    float: left;
+    margin:0;}
+
+.flight_from-to_div{
+    padding-top:8vh;
+    width:20vw;
+    height: 10vh;
+    font-size: 25px;
+    float: left;
+    margin:0;}
+
+  .yuh_button{
+    margin-top: 10px;
+    width: 10vw;
+    height: 30px;
+    color:black;
+    background-color: blue;
+    border-width: 0ch;
+    font-size: 20;
+    border-radius: 10px;
+    margin-left: 3vw;
+    bottom: 75px;
+}
+.yup{
+        margin-top: 10px;
+        width: 10vw;
+        height: 30px;
+        color:black;
+        background-color: blue;
+        border-width: 0ch;
+        font-size: 20;
+        border-radius: 10px;
+        margin-left: 3vw;
+        bottom: 75px;
+    
+}
+.ticket{
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.base_div_pass2{
+    width: 40%;
+    height: 40vh;
+    margin-left: 75px;
+    background-color: white;
+    border-top-width: 30px;
+    border-radius: 10px;
+    opacity: .9;
+    text-align: left;
+    Color: black;
+    float: left;
+}
+#pop{
+    margin-top:80px
+}
+#pop:hover{
+    margin-top: 0;
+}
+.twitter-tweet{
+    margin-left:30px;
+}
