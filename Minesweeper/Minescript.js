@@ -147,6 +147,8 @@ $('.gamebtn').click(function(e){
         grid[i-1][j-1][1]+=1; 
         bombsleft -=1;
         $(".bombsleft").text("Bombs left:  "+bombsleft);
+        if($(".Cleared").length >=mineheight*minewidth-bombnumber&&bombsleft==0){
+            gameover();}
         }
     }
    
@@ -192,7 +194,7 @@ $('.gamebtn').click(function(e){
     else{
         e.currentTarget.innerHTML = grid[$(e.currentTarget).data('gridlocation')[0]][$(e.currentTarget).data('gridlocation')[1]][0];
         $(e.currentTarget).addClass("Cleared");
-        if($(".Cleared").length >=mineheight*minewidth-bombnumber){
+        if($(".Cleared").length >=mineheight*minewidth-bombnumber&&bombsleft==0){
             gameover()
             }
             
@@ -208,7 +210,7 @@ while(zeros.length>0){
 
 }
 
-if($(".Cleared").length >=mineheight*minewidth-bombnumber){
+if($(".Cleared").length >=mineheight*minewidth-bombnumber&&bombsleft==0){
     gameover();
 }
 }
@@ -248,7 +250,7 @@ function fakeclick(butn){
 function gameover(){
     clearInterval(clock);
 
-    if($(".Cleared").length ==mineheight*minewidth-bombnumber){
+    if($(".Cleared").length ==mineheight*minewidth-bombnumber||bombsleft==0){
         alert("you win!")
         toptime = Math.min(toptime,time);
         $(".top3").text("High Score: "+toptime);
