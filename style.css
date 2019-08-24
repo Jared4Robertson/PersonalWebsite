@@ -12,6 +12,7 @@ body{
     background-color:#FFFFFF!important;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 100;
+    height: 100vh;
 
 }
 .navbar{
@@ -38,7 +39,7 @@ body{
     opacity:0.8;
 }
 .white-font{
-    font:white
+    color:white!important;
 }
 .black-font{
     font:black
@@ -51,18 +52,19 @@ body{
 .Title{
     font-size: 5vh;
     margin: 0em;
-    padding-top: 5vh!important;
+    padding-top: 40vh!important;
     padding-bottom: 0em!important;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
     width: 100%;
-    z-index: 3;
+    z-index: 5;
     color:black;
+    font-weight: bolder;
     
     position: relative;
 }
 .Sub-title{
-    font-size: 2.5vh;
+    font-size: 2.5vh!important;
     margin: 0em;
     padding-bottom: 0em!important;
     text-align: center;
@@ -74,10 +76,28 @@ body{
 }
 .egg-white{
     background-color: #E3E3E3	;
-    height: 75vh;
+    height: auto;
+    padding-bottom: 5vh;
+    
     padding-top: 5vh;
     z-index: 5;
     position: relative;
+}
+.Footer{
+    background-color: white	;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: 5;
+    position: relative;
+    font-size: 5vh;
+    margin: 0em;
+    padding-bottom: 0em!important;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+    color:black;
+    font-weight: bolder;
 }
 .strip{
     height: 2vh;
@@ -100,7 +120,7 @@ a{
     overflow-y: auto;
   }
   .parallax__layer {
-    padding-bottom: 100vh;
+    padding-bottom: 0;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -115,11 +135,8 @@ a{
   }
   .parallax__layer--back {
     -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-4px) scale(4);
+    transform: translateZ(-1px) scale(2);
     z-index: 1;
-    left: 200%;
-    top:100%;
-    width: 100%;
     height: 100vh;
   }
   .parallax__layer--deep {
@@ -138,8 +155,6 @@ a{
     position: absolute;
     width: 100%;
     height: 100vh;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     object-fit: cover;
 }
 
@@ -153,46 +168,22 @@ a{
   }
   img{
     
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
+    object-position: center;
+}
+#FunFacts{
+    display: none;
+    
 }
   @media (max-width: 1000px) {
 
-    .parallax__layer--back {
-        -webkit-transform: translateZ(-1px) scale(2);
-        transform: translateZ(-4px) scale(3);
-        z-index: 1;
-        left: -50%;
-        top:100%;
-        width: 100%;
-        height: 100vh;
-      }
-      img{
     
-        width: 200%;
-        height: 100vh;
-        object-fit: cover;
-    }
-
 }
 @media (max-width: 800px) {
 
-    .parallax__layer--back {
-        -webkit-transform: translateZ(-1px) scale(2);
-        transform: translateZ(-4px) scale(4);
-        z-index: 1;
-        left: 100%;
-        top:100%;
-        width: 100%;
-        height: 100vh;
-      }
-      img{
     
-        width: 130%;
-        height: 100vh;
-        object-fit: cover;
-    }
 
 }
   
