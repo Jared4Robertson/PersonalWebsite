@@ -7,7 +7,7 @@ function ToggleFunFacts() {
     }
   }
   function ToggleProjects() {
-    var x = document.getElementById("FunFacts");
+    var x = document.getElementById("Projects");
     if (x.style.display == "block") {
       x.style.display = "none";
     } else {
@@ -15,7 +15,7 @@ function ToggleFunFacts() {
     }
   }
   function ToggleSkills() {
-    var x = document.getElementById("FunFacts");
+    var x = document.getElementById("Skills");
     if (x.style.display == "block") {
       x.style.display = "none";
     } else {

@@ -110,7 +110,6 @@ body{
     margin: 0 auto;
 }
 a{
-    color: #A8B1B8	;
     visibility: visible;
 }
 .parallax {
@@ -166,7 +165,7 @@ a{
   .col-sm{
       opacity: 1;
   }
-  img{
+  .Main_img{
     
     width: 100vw;
     height: 100vh;
@@ -175,8 +174,28 @@ a{
 }
 #FunFacts{
     display: none;
-    
+
 }
+#Projects{
+    display: none;
+    line-height: normal;
+    text-align: left;
+}
+#Skills{
+    display: none;
+}
+.project-picture{
+    height: 24vh;
+    width:24vh;
+    background: #FFFFFF;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+.project-discription{
+    width: 50%;
+}
+
   @media (max-width: 1000px) {
 
     
