@@ -4,6 +4,16 @@
     background-color:#000000!important
 
 }
+.screen {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
 body{
     
     perspective: 1px;
@@ -40,6 +50,7 @@ body{
 }
 .white-font{
     color:white!important;
+    z-index: 13;
 }
 .black-font{
     font:black
@@ -62,6 +73,13 @@ body{
     font-weight: bolder;
     
     position: relative;
+}
+.title:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* To form a square, the padding-bottom, needs to have the same value as the width property */
+    box-shadow: inset 0px 0px 100px black;
 }
 .Sub-title{
     font-size: 2.5vh!important;
@@ -151,10 +169,12 @@ a{
   }
   .title{
     text-align: center;
-    position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    position: relative;
+    /* Remove the parts of the circle that is outside of the image */
+    overflow:hidden;
 }
 
 .parallax__group {
@@ -171,6 +191,10 @@ a{
     height: 100vh;
     object-fit: cover;
     object-position: center;
+    box-shadow: inset 0 0 100px black;
+}
+.Main_img::after{
+    box-shadow: inset 0 0 100px black;
 }
 #FunFacts{
     display: none;
